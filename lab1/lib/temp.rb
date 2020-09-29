@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-# класс для конвертации градусов
+# this class converting value from one degree scale to another
 class TempConverter
   def self.convert(val, from, to)
     case from
