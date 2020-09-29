@@ -17,6 +17,5 @@ jobs:
           bundle install --jobs 4 --retry 3
       - name: Rubocop
         run: bundle exec rubocop
-      - name: RSpec
-        run: bundle exec rspec
-
+      - name: RSpec lab 1
+        run: cd temp/ && bundle exec rspec
