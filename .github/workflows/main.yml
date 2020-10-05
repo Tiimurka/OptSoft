@@ -15,7 +15,7 @@ jobs:
         run: |
           gem install bundler
           bundle install --jobs 4 --retry 3
-      - name: Rubocop
+      - name: Rubocop lab1
         run: cd lab1/ bundle exec rubocop
-      - name: RSpec lab 1
+      - name: RSpec lab1
         run: cd lab1/ && bundle exec rspec
