@@ -18,7 +18,7 @@ RSpec.describe TempConverter do
     end
 
     context 'From F to K' do
-      it { expect(TempConverter.convert(10, 'F', 'K')) ==  265 }
+      it { expect(TempConverter.convert(10, 'F', 'K')) == 265 }
     end
 
     context 'From K to C' do
