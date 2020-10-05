@@ -23,12 +23,14 @@ class Main
 
   def self.val_handler(val)
     return 0 unless val == -1
+
     puts 'Некорректное значение, температура в градусах вводится цифрами'
     -1
   end
 
   def self.scale1_handler(scale)
     return 0 unless scale == -1
+
     puts 'Некорректное значение, тип шкалы ввводится латинскими буквами \
     C, F или К'
     -1
@@ -36,6 +38,7 @@ class Main
 
   def self.repeat_err_handler(first, second)
     return 0 unless first == second
+
     puts 'Некорректное значение, требуемый тип градусной шкалы должен \
     отличаться от исходного'
     -1
@@ -49,12 +52,15 @@ class Main
     puts 'Введите тип исходной градусной шкалы  (C, F, K)'
     from = scale_reader
     return if scale1_handler(from) == -1
+
     puts 'Введите температуру в градусах'
     val = val_reader
     return if val_handler(val) == -1
+
     puts 'Введите требуемый тип градусной шкалы  (C, F, K)'
     to = scale_reader
     return if scale2_handler(from, to) == -1
+
     puts 'Результат: ', TempConverter.convert(val, from, to)
   end
 end
