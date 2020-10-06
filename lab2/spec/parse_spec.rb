@@ -7,19 +7,19 @@ RSpec.describe CSVcalc do
   describe '.csv calculate' do
     let(:csv) { CSVcalc.new('spec/test.csv') }
     context 'Вычисляем минимальное значение' do
-      it { expect(csv.csv_min(2)) == (-1) }
+      it { expect(csv.csv_min(2)).to be == 12 }
     end
 
     context 'Вычисляем максимальое значение' do
-      it { expect(csv.csv_max(2)) == 124 }
+      it { expect(csv.csv_max(2)).to be == 120 }
     end
 
     context 'Вычисляем среднее значение' do
-      it { expect(csv.csv_average(2)) == 65.33.to_d }
+      it { expect(csv.csv_average(2)).to be == 57 }
     end
 
     context 'Вычисляем исправленную выборочную дисперсию' do
-      it { expect(csv.sample_variance(2)) == 3261.89.to_d }
+      it { expect(csv.sample_variance(2) - 5336.333333333333).to be < 0.0001 }
     end
   end
 end
