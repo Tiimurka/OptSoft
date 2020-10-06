@@ -1,0 +1,59 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/tiimurka/prog/RUBY/OptSoft/lab2/lib/parse.rb": {
+        "lines": [
+          null,
+          null,
+          1,
+          null,
+          1,
+          1,
+          null,
+          1,
+          4,
+          4,
+          4,
+          4,
+          4,
+          null,
+          null,
+          1,
+          1,
+          1,
+          6,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          6,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          6,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          1,
+          6,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      }
+    },
+    "timestamp": 1601990520
+  }
+}
