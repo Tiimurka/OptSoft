@@ -3,9 +3,9 @@
 require 'rspec'
 require_relative '../lib/parse'
 
-RSpec.describe CSVcalc do
+RSpec.describe CSVparse do
   describe '.csv calculate' do
-    let(:csv) { CSVcalc.new('spec/test.csv') }
+    let(:csv) { CSVparse.new('spec/test.csv') }
     context 'Вычисляем минимальное значение' do
       it { expect(csv.csv_min(2)).to be == 12 }
     end

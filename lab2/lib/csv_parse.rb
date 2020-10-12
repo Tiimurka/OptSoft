@@ -2,7 +2,7 @@
 
 require 'csv'
 
-class CSVcalc
+class CSVparse
   attr_accessor :data, :cols
 
   def initialize(path)

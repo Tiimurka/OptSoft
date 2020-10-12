@@ -17,7 +17,7 @@ class Main
     filepath = gets.chomp
     return -1 if file_name_handler(filepath) == -1
 
-    CSVcalc.new(filepath)
+    CSVParse.new(filepath)
   end
 
   def self.ch_cols(data, cols)
