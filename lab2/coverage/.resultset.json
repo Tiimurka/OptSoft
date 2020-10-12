@@ -1,7 +1,7 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/tiimurka/prog/RUBY/OptSoft/lab2/lib/parse.rb": {
+      "/home/tiimurka/prog/RUBY/OptSoft/lab2/lib/csv_parse.rb": {
         "lines": [
           null,
           null,
@@ -54,6 +54,6 @@
         ]
       }
     },
-    "timestamp": 1601991889
+    "timestamp": 1602527051
   }
 }
