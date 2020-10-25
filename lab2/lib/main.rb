@@ -1,11 +1,11 @@
 # frozen_string_literal: true
 
-require_relative 'parse'
+require_relative 'csv_parse'
 
 class Main
   def self.file_name_handler(str)
     # puts str
-    puts str.scan(/\..../)
+    # puts str.scan(/\..../)
     return 0 if str.end_with?('.csv')
 
     puts 'Не тот формат файла, должен быть .csv'
@@ -17,7 +17,7 @@ class Main
     filepath = gets.chomp
     return -1 if file_name_handler(filepath) == -1
 
-    CSVParse.new(filepath)
+    CSVparse.new(filepath)
   end
 
   def self.ch_cols(data, cols)

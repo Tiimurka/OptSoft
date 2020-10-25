@@ -10,7 +10,7 @@ RSpec.describe CSVparse do
       it { expect(csv.csv_min(2)).to be == 12 }
     end
 
-    context 'Вычисляем максимальое значение' do
+    context 'Вычисляем максимальное значение' do
       it { expect(csv.csv_max(2)).to be == 120 }
     end
 
